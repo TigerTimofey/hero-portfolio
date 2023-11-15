@@ -33,12 +33,10 @@ export default function WelcomePage() {
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-
-      <div className="my-16 text-center ">
+      <div className="my-16 text-center relative">
         {showHeading && (
           <code>
-            {" "}
-            <h3 className=" absolute text-sm text-zinc-500 mx-6 typing-demo">
+            <h3 className="absolute left-1/2 transform -translate-x-1/2 translate-x-100 text-sm text-zinc-500 mx-5 typing-demo">
               PASSIONATE SOFTWARE ENGINEER.
             </h3>
           </code>
