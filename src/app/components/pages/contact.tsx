@@ -12,6 +12,7 @@ export default function Contact() {
   useEffect(() => {
     AOS.refresh();
   }, []);
+
   return (
     <>
       <div className="bg-black relative">
@@ -55,7 +56,10 @@ export default function Contact() {
                 </a>
               </li>
               <li>
-                <a href="../../images/contact/resumeTimofey.png" download>
+                <a
+                  href="https://drive.google.com/file/d/1HuELTm2hqH7mwxRRPUKVltZbsepJM_fE/view?usp=sharing"
+                  download
+                >
                   <i className="fas fa-file icon">
                     <span
                       style={{
