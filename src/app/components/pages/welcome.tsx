@@ -18,7 +18,7 @@ export default function WelcomePage() {
     if (showLottie) {
       const headingTimeoutId = setTimeout(() => {
         setShowHeading(true);
-      }, 2000);
+      }, 500);
 
       return () => clearTimeout(headingTimeoutId);
     }
@@ -36,7 +36,7 @@ export default function WelcomePage() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 
-      <div className="my-16 text-center animate-fade-in">
+      <div className="my-16 text-center ">
         {showHeading && (
           <code>
             {" "}
