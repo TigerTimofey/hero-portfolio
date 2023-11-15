@@ -15,14 +15,12 @@ export default function WelcomePage() {
   }, []);
 
   useEffect(() => {
-    if (showLottie) {
-      const headingTimeoutId = setTimeout(() => {
-        setShowHeading(true);
-      }, 2000);
+    const headingTimeoutId = setTimeout(() => {
+      setShowHeading(true);
+    }, 1000);
 
-      return () => clearTimeout(headingTimeoutId);
-    }
-  }, [showLottie]);
+    return () => clearTimeout(headingTimeoutId);
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
@@ -36,12 +34,12 @@ export default function WelcomePage() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 
-      <div className="my-16 text-center animate-fade-in">
+      <div className="my-16 text-center ">
         {showHeading && (
           <code>
             {" "}
             <h3 className=" absolute text-sm text-zinc-500 mx-6 typing-demo">
-              I AM SOFTWARE ENGINEER.
+              PASSIONATE SOFTWARE DEVELOPER.
             </h3>
           </code>
         )}

@@ -1,12 +1,14 @@
 {
-  "name": "portfolio-tim",
+  "name": "hero-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tigertimofey.github.io/hero-portfolio/",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "deploy": "npm run build && yarn run export"
   },
   "dependencies": {
     "@emotion/css": "^11.11.2",
@@ -14,10 +16,10 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.18",
     "@mui/styled-engine-sc": "^6.0.0-alpha.6",
-    "next/font": "^14.0.2",
     "@tailwindcss/typography": "github:tailwindcss/typography",
     "aos": "^2.3.4",
     "chart.js": "^4.4.0",
+    "gh-pages": "^6.0.0",
     "lottie-react": "^2.4.0",
     "next": "14.0.2",
     "react": "^18",
