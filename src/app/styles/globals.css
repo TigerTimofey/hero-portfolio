@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
 /* T y p i n g */
 
 .typing-demo {
-  width: 23.5ch;
+  width: 29.5ch;
   animation: typing 3s steps(212), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
