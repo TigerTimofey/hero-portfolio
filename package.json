@@ -1,12 +1,15 @@
 {
-  "name": "portfolio-tim",
+  "name": "hero-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tigertimofey.github.io/hero-portfolio/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/css": "^11.11.2",
