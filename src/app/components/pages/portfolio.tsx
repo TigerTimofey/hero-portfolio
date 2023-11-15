@@ -13,7 +13,7 @@ export default function Portofolio() {
   };
   return (
     <>
-      <div className="bg-gray-300">
+      <div className="bg-gray-300" style={{ minHeight: "650px" }}>
         <div className="container flex items-center justify-center px-4 mx-auto">
           <h1
             style={{ fontFamily: "var(--font-calsans), sans-serif" }}
