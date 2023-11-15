@@ -39,7 +39,7 @@ export default function WelcomePage() {
           <code>
             {" "}
             <h3 className=" absolute text-sm text-zinc-500 mx-6 typing-demo">
-              PASSIONATE SOFTWARE DEVELOPER.
+              PASSIONATE SOFTWARE ENGINEER.
             </h3>
           </code>
         )}
