@@ -26,7 +26,7 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={300}
       />
-      <LazyLoad height={762} threshold={0.25}>
+      <LazyLoad threshold={0.25}>
         <div>
           {" "}
           <WelcomePage />
