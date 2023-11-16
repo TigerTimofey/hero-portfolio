@@ -46,13 +46,14 @@ export default function PortfolioSlider() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowLottie(true);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timeoutId);
   }, []);
 
   const handleAnimationComplete = () => {
     setAnimationVisible(false);
+    setShowLottie(false);
   };
 
   const handleSlideChange = (swiper: SwiperInstance) => {
@@ -74,16 +75,17 @@ export default function PortfolioSlider() {
         {portfolio[activeSlideIndex].name}
       </ItemName>
       {showLottie && (
-        <LazyLoad width="100%" threshold={0.25}>
+        <LazyLoad width="100%" className="animate-title" threshold={0.25}>
           <Lottie
-            loop={1}
+            // loop={1}
             animationData={Swipe}
             style={{
-              width: "38%",
+              width: "25%",
               position: "absolute",
-              zIndex: "0",
-              top: "120px",
-              left: "1px",
+              zIndex: "9",
+              top: "125px",
+              left: "20px",
+              color: "white",
             }}
             onComplete={handleAnimationComplete}
           />
@@ -156,7 +158,7 @@ export default function PortfolioSlider() {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="mySwiper"
+          className="mySwiper "
           onSlideChange={handleSlideChange}
         >
           {portfolio.map((item, index) => (

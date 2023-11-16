@@ -25,7 +25,17 @@ export const portfolio = [
   {
     id: 1,
     img: soulmall,
-    stack: ["HTML", "SCSS", "React", "Redux", "Java Script", "Bootstrap"],
+    stack: [
+      "HTML",
+      "SCSS",
+      "React",
+      "Redux",
+      "Java Script",
+      "Bootstrap",
+      "Scss",
+      "Router Dom",
+      "Api services",
+    ],
     code: "https://github.com/TigerTimofey/soul-mall",
     demo: "https://tigertimofey.github.io/soul-mall/",
     name: "Sushi bar",
