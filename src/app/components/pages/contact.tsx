@@ -25,7 +25,7 @@ export default function Contact() {
           </h1>
         </div>
 
-        <main className="mt-10 mb-10 flex flex-col items-center flex-1 px-4 sm:px-20 w-full text-center z-10 py-8 sm:pb-20 relative">
+        <main className="mt-10 mb-10 flex flex-col items-center flex-1 sm:px-20 w-full text-center z-10 py-8 sm:pb-20 relative">
           <Grid
             container
             direction="row"
@@ -40,19 +40,19 @@ export default function Contact() {
             />
             <ul>
               <li>
-                <a href="https://github.com/TigerTimofey">
-                  <i className="fab fa-github icon"></i>{" "}
+                <a href="https://github.com/TigerTimofey ">
+                  <i className="fab fa-github icon "></i>{" "}
                 </a>
               </li>
 
               <li>
                 <a href="https://www.linkedin.com/in/timofey-babisashvili/">
-                  <i className="fab fa-linkedin-in icon"></i>
+                  <i className="fab fa-linkedin-in icon "></i>
                 </a>
               </li>
               <li>
                 <a href="mailto:timofey.babisashvili@gmail.com">
-                  <i className="fas fa-envelope icon"></i>
+                  <i className="fas fa-envelope icon "></i>
                 </a>
               </li>
               <li>
@@ -60,7 +60,7 @@ export default function Contact() {
                   href="https://drive.google.com/file/d/1HuELTm2hqH7mwxRRPUKVltZbsepJM_fE/view?usp=sharing"
                   download
                 >
-                  <i className="fas fa-file icon">
+                  <i className="fas fa-file icon ">
                     <span
                       style={{
                         display: "block",

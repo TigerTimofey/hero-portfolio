@@ -30,7 +30,7 @@ export default function Skills() {
   return (
     <>
       <div className="bg-black relative">
-        <div className="container flex items-center justify-center px-4 mx-auto">
+        <div className="container flex items-center justify-center  mx-auto">
           <h1
             style={{ fontFamily: "var(--font-calsans), sans-serif" }}
             className="mt-2 mb-6 text-4xl text-transparent duration-1000 white cursor-default text-white font-display sm:text-6xl md:text-6xl whitespace-nowrap bg-clip-text"
