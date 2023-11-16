@@ -43,17 +43,18 @@ export default function Skills() {
             <Grid item xs={12} md={6}>
               <Grid container spacing={2}>
                 {skills.map((item) => (
-                  <Grid item key={item.id} xs={4} md={4}>
+                  <Grid item key={item.id} xs={3} md={4}>
                     <div
                       style={{
                         borderRadius: "10%",
-
+                        marginLeft: "20px",
                         padding: "10px",
                         overflow: "hidden",
-                        maxWidth: "100px",
-                        maxHeight: "100px",
+
+                        maxWidth: "65px",
+                        maxHeight: "65px",
                       }}
-                      className="image-container"
+                      className="image-container "
                       onMouseEnter={() =>
                         handleMouseEnter(item.year, item.color)
                       }
@@ -68,7 +69,6 @@ export default function Skills() {
                         style={{
                           width: "100%",
                           height: "100%",
-                          padding: "5px",
                         }}
                       />
                     </div>
@@ -80,6 +80,23 @@ export default function Skills() {
             <Grid item xs={12} md={6}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
+                  {!hoveredYear && (
+                    <div
+                      data-aos="fade-left"
+                      data-aos-anchor="#example-anchor"
+                      data-aos-offset="500"
+                      data-aos-duration="900"
+                      style={{
+                        position: "absolute",
+                        right: "14rem",
+                        fontFamily: "var(--font-calsans), sans-serif",
+                        color: "white",
+                      }}
+                      className=" xs:mr-20 xl:mx-40 text-xl mx-5 mt-4 animate-title "
+                    >
+                      <h1>Hover skill for experience</h1>
+                    </div>
+                  )}
                   {hoveredYear && (
                     <div
                       data-aos="fade-left"
@@ -88,7 +105,7 @@ export default function Skills() {
                       data-aos-duration="900"
                       style={{
                         position: "absolute",
-                        right: "7.5rem",
+                        right: "15.5rem",
                         backgroundColor: hoveredColor,
                         padding: "10px",
                         borderRadius: "5%",
@@ -96,14 +113,18 @@ export default function Skills() {
                       }}
                       className="md:mx-20 xl:mx-40"
                     >
-                      <h1 className=" first-letter:mt-2 mb-2 text-4xl text-transparent duration-1000 white cursor-default text-white font-display whitespace-nowrap bg-clip-text">
+                      <h1 className="first-letter:mt-2 mb-2 text-4xl text-transparent duration-1000 white cursor-default text-white font-display whitespace-nowrap bg-clip-text">
                         {hoveredYear}
                       </h1>
                     </div>
                   )}
                 </Grid>
+
                 <Grid item xs={12} style={{ marginTop: "2rem" }}>
-                  <Lottie animationData={remoteJob} />
+                  <Lottie
+                    style={{ maxWidth: "70%", marginLeft: "auto" }}
+                    animationData={remoteJob}
+                  />
                 </Grid>
               </Grid>
             </Grid>
