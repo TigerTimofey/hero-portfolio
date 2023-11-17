@@ -19,12 +19,12 @@ body::-webkit-scrollbar {
 
 .animate-title {
   position: relative;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   opacity: 0;
   color: transparent;
   background: white;
   -webkit-background-clip: text;
-  animation: fadeInAndScale 3s ease-in-out forwards;
+  animation: fadeInAndScale 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeInAndScale {
@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
 /* T y p i n g */
 
 .typing-demo {
-  width: 29.5ch;
+  width: 30.2ch;
   animation: typing 3s steps(212), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -89,6 +89,18 @@ body::-webkit-scrollbar {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+}
+
+@media (max-width: 400px) {
+  .swiperDiv {
+    height: "400px";
+  }
+  .mySwiper {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    max-width: 150px;
+  }
 }
 
 /* S k i l l s */
@@ -132,7 +144,7 @@ ul li a {
   text-align: center;
   line-height: 80px;
   font-size: 35px;
-  margin: 0 10px;
+  margin: 0 5px;
   display: block;
   border-radius: 50%;
   position: relative;

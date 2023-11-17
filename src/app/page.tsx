@@ -24,9 +24,9 @@ export default function Home() {
     <>
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={300}
+        quantity={400}
       />
-      <LazyLoad height={762} threshold={0.25}>
+      <LazyLoad width="100%" threshold={0.25}>
         <div>
           {" "}
           <WelcomePage />
@@ -36,19 +36,19 @@ export default function Home() {
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
-          data-aos-duration="900"
+          data-aos-duration="600"
         >
           {" "}
           <About />
         </div>
       </LazyLoad>
+
       <LazyLoad width="100%" threshold={0.25}>
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
-          data-aos-duration="900"
+          data-aos-duration="600"
         >
-          {" "}
           <Skills />
         </div>
       </LazyLoad>
@@ -56,7 +56,7 @@ export default function Home() {
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
-          data-aos-duration="900"
+          data-aos-duration="600"
         >
           {" "}
           <Portofolio />
@@ -66,7 +66,7 @@ export default function Home() {
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
-          data-aos-duration="900"
+          data-aos-duration="600"
         >
           {" "}
           <Contact />

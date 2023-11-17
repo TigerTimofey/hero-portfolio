@@ -25,7 +25,17 @@ export const portfolio = [
   {
     id: 1,
     img: soulmall,
-    stack: ["HTML", "SCSS", "React", "Redux", "Java Script", "Bootstrap"],
+    stack: [
+      "HTML",
+      "SCSS",
+      "React",
+      "Redux",
+      "Java Script",
+      "Bootstrap",
+      "Scss",
+      "Router Dom",
+      "Api services",
+    ],
     code: "https://github.com/TigerTimofey/soul-mall",
     demo: "https://tigertimofey.github.io/soul-mall/",
     name: "Sushi bar",
@@ -70,7 +80,7 @@ export const portfolio = [
   {
     id: 4,
     img: sweethome,
-    stack: ["HTML", "SCSS", "React", "sweetalert2", "React Router Dom"],
+    stack: ["HTML", "SCSS", "React", "sweetalert2", "Router Dom"],
     code: "https://github.com/TigerTimofey/sweet-home",
     demo: "https://tigertimofey.github.io/sweet-home/",
     name: "Airbnb helper",
@@ -78,7 +88,7 @@ export const portfolio = [
   {
     id: 5,
     img: weather,
-    stack: ["HTML", "SCSS", "REST API", "React", "Redux", " Bootstap"],
+    stack: ["HTML", "SCSS", "REST API", "React", "Redux", " Bootstrap"],
     code: "https://github.com/TigerTimofey/weather-app",
     demo: "https://tigertimofey.github.io/weather-app/",
     name: "Estonia weater app",
@@ -86,7 +96,7 @@ export const portfolio = [
   {
     id: 6,
     img: news,
-    stack: ["HTML", "SCSS", "REST API", "React", "Redux", "React Bootstap"],
+    stack: ["HTML", "SCSS", "REST API", "React", "Redux", "Bootstrap"],
     code: "https://github.com/TigerTimofey/NewsApp",
     demo: "https://tigertimofey.github.io/NewsApp",
     name: "News app",

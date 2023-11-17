@@ -1,3 +1,4 @@
+import LazyLoad from "react-lazy-load";
 import PieChart from "../piecharts/piechartAbout";
 
 const aboutMe = {
@@ -24,7 +25,9 @@ export default function About() {
               <div className="flex justify-between w-full items-baseline">
                 <div className="mx-auto text-center flex flex-col">
                   <div className="mx-auto">
-                    <PieChart />
+                    <LazyLoad width="100%" threshold={0.25}>
+                      <PieChart />
+                    </LazyLoad>
                   </div>
                   <br />
                   <h4 className="font-semibold text-xl">

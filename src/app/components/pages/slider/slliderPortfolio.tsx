@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
 import SwiperInstance from "swiper";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/navigation";
@@ -19,6 +19,12 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 
+import Swipe from "../../images/animations/swipe.json";
+
+import Lottie from "lottie-react";
+
+import LazyLoad from "react-lazy-load";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -34,6 +40,21 @@ const ItemName = styled(Typography)(({ theme }) => ({
 }));
 export default function PortfolioSlider() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const [animationVisible, setAnimationVisible] = useState(true);
+  const [showLottie, setShowLottie] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowLottie(true);
+    }, 4000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  const handleAnimationComplete = () => {
+    setAnimationVisible(false);
+    setShowLottie(false);
+  };
 
   const handleSlideChange = (swiper: SwiperInstance) => {
     setActiveSlideIndex(swiper.activeIndex);
@@ -53,6 +74,24 @@ export default function PortfolioSlider() {
       >
         {portfolio[activeSlideIndex].name}
       </ItemName>
+      {showLottie && (
+        <LazyLoad width="100%" className="animate-title" threshold={0.25}>
+          <Lottie
+            loop={2}
+            animationData={Swipe}
+            style={{
+              width: "25%",
+              position: "absolute",
+              zIndex: "9",
+              top: "105px",
+              left: "80px",
+              color: "white",
+            }}
+            onComplete={handleAnimationComplete}
+          />
+        </LazyLoad>
+      )}
+
       <Grid item xs={12} className="flex justify-center">
         <Stack
           direction="row"
@@ -115,19 +154,21 @@ export default function PortfolioSlider() {
       </Grid>
 
       <Grid item xs={5}>
-        <Swiper
-          effect={"cards"}
-          grabCursor={true}
-          modules={[EffectCards]}
-          className="mySwiper"
-          onSlideChange={handleSlideChange}
-        >
-          {portfolio.map((item, index) => (
-            <SwiperSlide key={index}>
-              <Image src={item.img} alt="port" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="swiperDiv">
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="mySwiper "
+            onSlideChange={handleSlideChange}
+          >
+            {portfolio.map((item, index) => (
+              <SwiperSlide key={index}>
+                <Image src={item.img} alt="port" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </Grid>
 
       <Grid item xs={6} sm={10} md={12} className="flex justify-center">
