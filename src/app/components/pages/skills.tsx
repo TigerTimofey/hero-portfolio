@@ -113,7 +113,7 @@ export default function Skills() {
                       }}
                       className="md:mx-20 xl:mx-40"
                     >
-                      <h1 className="first-letter:mt-2 mb-2 text-4xl text-transparent duration-1000 white cursor-default text-white font-display whitespace-nowrap bg-clip-text">
+                      <h1 className=" first-letter:mt-2 mb-2 text-3xl text-transparent duration-1000 white cursor-default text-white font-display whitespace-nowrap bg-clip-text">
                         {hoveredYear}
                       </h1>
                     </div>

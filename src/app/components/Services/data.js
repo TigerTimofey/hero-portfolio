@@ -125,7 +125,7 @@ export const skills = [
   {
     id: 4,
     img: ts,
-    year: "1 year",
+    year: "2 years",
     color: "#007acc",
   },
   {
@@ -161,13 +161,13 @@ export const skills = [
   {
     id: 10,
     img: postgres,
-    year: "1 year",
+    year: "2 years",
     color: "#366992",
   },
   {
     id: 11,
     img: mysql,
-    year: "1 year",
+    year: "2 years",
     color: "#fa8a3b",
   },
   {
@@ -191,7 +191,7 @@ export const skills = [
   {
     id: 15,
     img: termius,
-    year: "1 year",
+    year: "2 years",
     color: "#4757cd",
   },
 ];

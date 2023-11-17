@@ -25,6 +25,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-lazy-load": "^4.0.1",
+    "react-player": "^2.13.0",
     "styled-components": "^6.1.1",
     "swiper": "^11.0.4",
     "tailwindcss-debug-screens": "^2.2.1"
