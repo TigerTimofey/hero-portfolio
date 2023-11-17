@@ -21,11 +21,10 @@ const style = {
 };
 
 const aboutMe = {
-  name: "I'm a web developer based in the cozy city Tallinn, Estonia.",
-  descriptionStart: `\u00A0 Since 2020, I've been actively involved in web development, crafting digital projects, and continually honing my programming skills. My journey kicked off with grasping the basics of HTML, SCSS, and JavaScript,
-   and delving into Bootstrap. Progressing further, I immersed myself in React, Next.js, and TypeScript, broadening my toolkit. I proudly consider myself a `,
+  name: "Hi, I'm Tim - Software Developer from Estonia!",
+  descriptionStart: `\u00A0 Since 2020, I've been actively doing web development, creating digital projects, and constantly improving my programming skills. My journey began with learning the basics of HTML, SCSS, and JavaScript and exploring Bootstrap. As I progressed, I got into React, Next.js, and TypeScript, expanding my toolkit. I consider myself a `,
 
-  descriptionEnd: `\u00A0 I've successfully completed various additional courses, aiming to put my newfound knowledge into practical use. Outside the realm of coding, I embrace my roles as a loving husband and father during my free time. My life strikes a balance between digital creativity and cherished family values.`,
+  descriptionEnd: `\u00A0 I've successfully completed many additional courses, and my goal is to apply new knowledge in practice. In my free time away from coding, I'm a loving husband and father. My life is a balance between digital creativity and family values.`,
 };
 
 export default function About() {
