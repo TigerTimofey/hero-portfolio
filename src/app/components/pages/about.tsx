@@ -1,13 +1,38 @@
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+
 import LazyLoad from "react-lazy-load";
 import PieChart from "../piecharts/piechartAbout";
 
+import ReactPlayer from "react-player";
+
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "white",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
+
 const aboutMe = {
   name: "I'm a web developer based in the cozy city Tallinn, Estonia.",
-  description: `\u00A0 Since 2020, I've embarked on an exciting journey in web development, crafting digital experiences and bringing ideas to life on the web. When I'm not immersed in code, you'll find me wielding my skills as a passionate sushi chef, creating delectable culinary delights.
-  Beyond the world of technology, I'm a loving father, cherishing every moment with my family. Life is a rich tapestry of flavors, both in code and in the kitchen!`,
+  descriptionStart: `\u00A0 Since 2020, I've been actively involved in web development, crafting digital projects, and continually honing my programming skills. My journey kicked off with grasping the basics of HTML, SCSS, and JavaScript,
+   and delving into Bootstrap. Progressing further, I immersed myself in React, Next.js, and TypeScript, broadening my toolkit. I proudly consider myself a `,
+
+  descriptionEnd: `\u00A0 I've successfully completed various additional courses, aiming to put my newfound knowledge into practical use. Outside the realm of coding, I embrace my roles as a loving husband and father during my free time. My life strikes a balance between digital creativity and cherished family values.`,
 };
 
 export default function About() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <>
       <div className="bg-gray-300">
@@ -34,13 +59,50 @@ export default function About() {
                     <code>{aboutMe.name}</code>
                   </h4>
                   <br />
-                  <h5 className="text-gray-700">{aboutMe.description}</h5>
+                  <h5 className="text-gray-700">
+                    {aboutMe.descriptionStart}
+                    <button
+                      onClick={handleOpen}
+                      className="text-blue-500  cursor-pointer"
+                    >
+                      pufferfish
+                    </button>
+                    {" in the ocean of coding."}
+                    {aboutMe.descriptionEnd}
+                  </h5>
                 </div>
               </div>
             </div>
           </section>{" "}
         </main>
       </div>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography
+            style={{
+              fontFamily: "var(--font-calsans), sans-serif",
+              textAlign: "center",
+            }}
+            id="modal-modal-title"
+            variant="h6"
+            component="h2"
+          >
+            Timofey as the Pufferfish
+          </Typography>
+          <ReactPlayer
+            url={"https://youtu.be/AY70INP5GB4"}
+            controls={true}
+            width="100%"
+            height="100%"
+          />
+        </Box>
+      </Modal>
     </>
   );
 }
