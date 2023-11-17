@@ -91,6 +91,18 @@ body::-webkit-scrollbar {
   color: #fff;
 }
 
+@media (max-width: 400px) {
+  .swiperDiv {
+    height: "400px";
+  }
+  .mySwiper {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    max-width: 150px;
+  }
+}
+
 /* S k i l l s */
 .image-container {
   border-radius: 10%;

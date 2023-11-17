@@ -46,7 +46,7 @@ export default function PortfolioSlider() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowLottie(true);
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timeoutId);
   }, []);
@@ -77,14 +77,14 @@ export default function PortfolioSlider() {
       {showLottie && (
         <LazyLoad width="100%" className="animate-title" threshold={0.25}>
           <Lottie
-            // loop={1}
+            loop={2}
             animationData={Swipe}
             style={{
               width: "25%",
               position: "absolute",
               zIndex: "9",
-              top: "125px",
-              left: "20px",
+              top: "105px",
+              left: "80px",
               color: "white",
             }}
             onComplete={handleAnimationComplete}
@@ -154,19 +154,21 @@ export default function PortfolioSlider() {
       </Grid>
 
       <Grid item xs={5}>
-        <Swiper
-          effect={"cards"}
-          grabCursor={true}
-          modules={[EffectCards]}
-          className="mySwiper "
-          onSlideChange={handleSlideChange}
-        >
-          {portfolio.map((item, index) => (
-            <SwiperSlide key={index}>
-              <Image src={item.img} alt="port" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="swiperDiv">
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="mySwiper "
+            onSlideChange={handleSlideChange}
+          >
+            {portfolio.map((item, index) => (
+              <SwiperSlide key={index}>
+                <Image src={item.img} alt="port" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </Grid>
 
       <Grid item xs={6} sm={10} md={12} className="flex justify-center">
