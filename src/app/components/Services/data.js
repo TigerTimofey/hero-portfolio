@@ -107,19 +107,19 @@ export const skills = [
   {
     id: 1,
     img: html,
-    year: "5 years",
+    year: "4 years",
     color: "#f16529",
   },
   {
     id: 2,
     img: css,
-    year: "5 years",
+    year: "4 years",
     color: "#1f72b5",
   },
   {
     id: 3,
     img: js,
-    year: "5 years",
+    year: "4 years",
     color: "#dec91b",
   },
   {
@@ -149,25 +149,25 @@ export const skills = [
   {
     id: 8,
     img: npm,
-    year: "4 years",
+    year: "3 years",
     color: "#cb3837",
   },
   {
     id: 9,
     img: node,
-    year: "4 years",
+    year: "3 years",
     color: "#41893e",
   },
   {
     id: 10,
     img: postgres,
-    year: "2 years",
+    year: "1 years",
     color: "#366992",
   },
   {
     id: 11,
     img: mysql,
-    year: "2 years",
+    year: "1 years",
     color: "#fa8a3b",
   },
   {
@@ -179,19 +179,19 @@ export const skills = [
   {
     id: 13,
     img: trello,
-    year: "4 years",
+    year: "2 years",
     color: "#067cc0",
   },
   {
     id: 14,
     img: jira,
-    year: "3 years",
+    year: "2 years",
     color: "#6399e4",
   },
   {
     id: 15,
     img: termius,
-    year: "2 years",
+    year: "1 years",
     color: "#4757cd",
   },
 ];

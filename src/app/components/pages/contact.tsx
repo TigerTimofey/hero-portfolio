@@ -64,7 +64,7 @@ export default function Contact() {
                     <span
                       style={{
                         display: "block",
-                        fontSize: "0.20em",
+                        fontSize: "0.15em",
                         marginTop: "-1.7em",
                         color: "white",
                       }}
