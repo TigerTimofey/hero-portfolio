@@ -77,7 +77,7 @@ export default function PortfolioSlider() {
       {showLottie && (
         <LazyLoad width="100%" className="animate-title" threshold={0.25}>
           <Lottie
-            // loop={2}
+            loop={2}
             animationData={Swipe}
             style={{
               width: "20%",

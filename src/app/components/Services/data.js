@@ -4,6 +4,7 @@ import weather from "../images/portfolio/weather.png";
 import timofey from "../images/portfolio/portfolio.png";
 import news from "../images/portfolio/news.png";
 import games from "../images/portfolio/games.png";
+import osushiapp from "../images/portfolio/osushiapp.png";
 
 import html from "../images/skills/HTML-5-01.svg";
 import css from "../images/skills/CSS-3-01.svg";
@@ -24,6 +25,23 @@ import termius from "../images/skills/termius.svg";
 export const portfolio = [
   {
     id: 1,
+    img: osushiapp,
+    stack: [
+      "HTML",
+      "SCSS",
+      "React Native",
+      "React",
+      "Java Script",
+      "Typescript",
+      "REST APIs",
+      "IOS",
+    ],
+    code: "https://github.com/TigerTimofey/Osushi-app",
+    demo: "https://youtu.be/5SQEfZffCk8",
+    name: "Mobile App",
+  },
+  {
+    id: 2,
     img: soulmall,
     stack: [
       "HTML",
@@ -42,7 +60,7 @@ export const portfolio = [
   },
 
   {
-    id: 2,
+    id: 3,
     img: games,
     stack: [
       "HTML",
@@ -61,7 +79,7 @@ export const portfolio = [
   },
 
   {
-    id: 3,
+    id: 4,
     img: timofey,
     stack: [
       "HTML",
@@ -78,7 +96,7 @@ export const portfolio = [
   },
 
   {
-    id: 4,
+    id: 5,
     img: sweethome,
     stack: ["HTML", "SCSS", "React", "sweetalert2", "Router Dom"],
     code: "https://github.com/TigerTimofey/sweet-home",
@@ -86,7 +104,7 @@ export const portfolio = [
     name: "Airbnb helper",
   },
   {
-    id: 5,
+    id: 6,
     img: weather,
     stack: ["HTML", "SCSS", "REST API", "React", "Redux", " Bootstrap"],
     code: "https://github.com/TigerTimofey/weather-app",
@@ -94,7 +112,7 @@ export const portfolio = [
     name: "Estonia weater app",
   },
   {
-    id: 6,
+    id: 7,
     img: news,
     stack: ["HTML", "SCSS", "REST API", "React", "Redux", "Bootstrap"],
     code: "https://github.com/TigerTimofey/NewsApp",
