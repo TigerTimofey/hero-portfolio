@@ -57,7 +57,7 @@ export default function Contact() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1HuELTm2hqH7mwxRRPUKVltZbsepJM_fE/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1nmFqUVhk2Xd-LeVimxT-jQGl7L200bDg/view?usp=share_link"
                   download
                 >
                   <i className="fas fa-file icon ">
