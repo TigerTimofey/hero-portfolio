@@ -5,6 +5,7 @@ import timofey from "../images/portfolio/portfolio.png";
 import news from "../images/portfolio/news.png";
 import games from "../images/portfolio/games.png";
 import osushiapp from "../images/portfolio/osushiapp.png";
+import faplaapp from "../images/portfolio/faplaapp.png";
 
 import html from "../images/skills/HTML-5-01.svg";
 import css from "../images/skills/CSS-3-01.svg";
@@ -25,13 +26,29 @@ import termius from "../images/skills/termius.svg";
 export const portfolio = [
   {
     id: 1,
+    img: faplaapp,
+    stack: [
+      "HTML",
+      "SCSS",
+      "React",
+      "JavaScript",
+      "Typescript",
+      "Mongoose",
+      "MongoDB",
+    ],
+    code: "https://github.com/TigerTimofey/fapla-app",
+    demo: "https://youtu.be/E7aro8HNCWc",
+    name: "Family day planner",
+  },
+  {
+    id: 2,
     img: osushiapp,
     stack: [
       "HTML",
       "SCSS",
       "React Native",
       "React",
-      "Java Script",
+      "JavaScript",
       "Typescript",
       "REST APIs",
       "IOS",
@@ -41,14 +58,14 @@ export const portfolio = [
     name: "Mobile App",
   },
   {
-    id: 2,
+    id: 3,
     img: soulmall,
     stack: [
       "HTML",
       "SCSS",
       "React",
       "Redux",
-      "Java Script",
+      "JavaScript",
       "Bootstrap",
       "Scss",
       "Router Dom",
@@ -60,7 +77,7 @@ export const portfolio = [
   },
 
   {
-    id: 3,
+    id: 4,
     img: games,
     stack: [
       "HTML",
@@ -71,7 +88,7 @@ export const portfolio = [
       "MySQL",
       "Postgres",
       "Docker",
-      "Java Script",
+      "JavaScript",
     ],
     code: "",
     demo: "",
@@ -79,7 +96,7 @@ export const portfolio = [
   },
 
   {
-    id: 4,
+    id: 5,
     img: timofey,
     stack: [
       "HTML",
@@ -96,7 +113,7 @@ export const portfolio = [
   },
 
   {
-    id: 5,
+    id: 6,
     img: sweethome,
     stack: ["HTML", "SCSS", "React", "sweetalert2", "Router Dom"],
     code: "https://github.com/TigerTimofey/sweet-home",
@@ -104,7 +121,7 @@ export const portfolio = [
     name: "Airbnb helper",
   },
   {
-    id: 6,
+    id: 7,
     img: weather,
     stack: ["HTML", "SCSS", "REST API", "React", "Redux", " Bootstrap"],
     code: "https://github.com/TigerTimofey/weather-app",
@@ -112,7 +129,7 @@ export const portfolio = [
     name: "Estonia weater app",
   },
   {
-    id: 7,
+    id: 8,
     img: news,
     stack: ["HTML", "SCSS", "REST API", "React", "Redux", "Bootstrap"],
     code: "https://github.com/TigerTimofey/NewsApp",
